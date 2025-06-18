@@ -24,6 +24,13 @@ export default function Hero() {
       >
         I&apos;m a software developer that loves coding.
       </motion.p>
+
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-500 transition"
+      >
+        Learn More <ArrowRight size={18} />
+      </motion.button>
       
     </section>
   );
