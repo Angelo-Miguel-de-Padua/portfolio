@@ -23,6 +23,15 @@ export default function Hero() {
         />
       </motion.div>
 
+      <motion.p
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-zinc-400 text-lg mb-2"
+      >
+        Welcome to my portfolio
+      </motion.p>
+
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
