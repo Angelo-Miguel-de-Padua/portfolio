@@ -2,10 +2,26 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-4">
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        className="mb-6"
+      >
+        <Image
+          src="/profile.jpg"
+          alt="Profile"
+          width={160}
+          height={160}
+          className="rounded-full object-cover border-4 border-indigo-500 shadow-lg"
+        />
+      </motion.div>
 
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
