@@ -8,6 +8,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-4">
 
+      {/* Profile Picture */} 
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -23,6 +24,7 @@ export default function Hero() {
         />
       </motion.div>
 
+      {/* Introduction Text */}
       <motion.p
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -32,6 +34,7 @@ export default function Hero() {
         Welcome to my portfolio
       </motion.p>
 
+      {/* Main heading */}
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -41,6 +44,7 @@ export default function Hero() {
         Hi, I&apos;m <span className="text-indigo-400">Angelo</span>
       </motion.h1>
 
+      {/* Description */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -50,6 +54,7 @@ export default function Hero() {
         I&apos;m a software developer that loves coding.
       </motion.p>
 
+      {/* Call-to-action button */}
       <motion.button
         whileHover={{ scale: 1.05 }}
         className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-500 transition"
