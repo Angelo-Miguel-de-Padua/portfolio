@@ -20,7 +20,7 @@ export default function Hero() {
           alt="Profile"
           width={160}
           height={160}
-          className="rounded-full object-cover border-4 border-indigo-500 shadow-lg"
+          className="rounded-full object-cover border-4 border-teal-400 shadow-lg"
         />
       </motion.div>
 
@@ -29,7 +29,8 @@ export default function Hero() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-zinc-400 text-lg mb-2"
+        className="text-lg mb-2"
+        style={{ color: 'var(--color-text-secondary)' }}
       >
         Welcome to my portfolio
       </motion.p>
@@ -39,9 +40,9 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-4xl sm:text-6xl font-bold"
+        className="text-4xl sm:text-6xl font-bold text-zinc-200"
       >
-        Hi, I&apos;m <span className="text-indigo-400">Angelo</span>
+        Hi, I&apos;m <span className="text-teal-400">Angelo</span>
       </motion.h1>
 
       {/* Description */}
@@ -49,7 +50,8 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="mt-4 text-lg max-w-xl text-zinc-400"
+        className="mt-4 text-lg max-w-xl"
+        style={{ color: 'var(--color-text-secondary)' }}
       >
         I&apos;m a software developer that loves coding.
       </motion.p>
@@ -57,7 +59,7 @@ export default function Hero() {
       {/* Call-to-action button */}
       <motion.button
         whileHover={{ scale: 1.05 }}
-        className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-500 transition"
+        className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-teal-500 text-white rounded-full hover:bg-teal-600 transition"
       >
         Learn More <ArrowRight size={18} />
       </motion.button>
