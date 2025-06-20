@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-site-background">
 
       {/* Profile Picture */} 
       <motion.div

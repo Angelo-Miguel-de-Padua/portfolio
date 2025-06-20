@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 :root {
+
+  --background-from: #0f1b1d;
+  --background-via: #11272d;
+  --background-to: #1b3a41;
+
   --color-background: #f8f8f8;
   --color-primary: #6366f1; 
   --color-primary-dark: #4f46e5; 
@@ -9,13 +14,9 @@
   --color-text-secondary: #a1a1aa; 
 }
 
-:root.dark {
-  --color-background: #1c1c1c;
-  --color-primary: #818cf8;
-  --color-primary-dark: #6366f1;
-  --color-primary-light: #a5b4fc;
-  --color-text: #b3b3b3;
-  --color-text-secondary: #6b7280;
+
+.bg-site-background {
+  background: linear-gradient(to bottom right, var(--background-from), var(--background-via), var(--background-to));
 }
 
 body {
