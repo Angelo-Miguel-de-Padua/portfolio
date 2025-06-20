@@ -16,7 +16,7 @@ export default function Hero() {
         className="mb-6"
       >
         <Image
-          src="/profile.jpg"
+          src="/assets/profile.jpg"
           alt="Profile"
           width={160}
           height={160}
